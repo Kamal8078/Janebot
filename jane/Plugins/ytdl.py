@@ -129,11 +129,11 @@ async def download_video(event):
           ],
           progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
             progress(
-                d, t, event, c_time, "uploading..", f"{ytdl_data['title']}.mp3"
+                d, t, vtx, c_time, "uploading..", f"{ytdl_data['title']}.mp3.mp3"
             )
          ),
       )
-      os.remove(f"{ytdl_data['id']}.mp3")      
+      os.remove(f"{ytdl_data['id']}.mp3.mp3")      
         
         
         
